@@ -6,4 +6,5 @@ it contains
   2. permutation check
   3. palindromic check
   4. one edit check
+  5. String Compression
   
