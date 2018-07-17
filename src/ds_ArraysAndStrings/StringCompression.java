@@ -22,9 +22,31 @@ public class StringCompression {
 		// the result return string
 		String result = "";
 		
-		result = Compression(myString);
+		result = Compression2(myString);
 		
 		System.out.println(result);
+	}
+
+	/**
+	 * StringBuilder Solution
+	 * @param myString
+	 * @return
+	 */
+	private static String Compression2(String myString) {
+		StringBuilder compressed = new StringBuilder();
+		
+		int appearTimes = 0;
+		
+		for(int i = 0; i < myString.length(); i++) {
+			appearTimes++;
+			
+			if(i + 1 >= myString.length() || myString.charAt(i) != myString.charAt(i + 1)) {
+				compressed.append(myString.charAt(i));
+				compressed.append(appearTimes);
+				appearTimes = 0;
+			}
+		}
+		return compressed.length() < myString.length() ? compressed.toString() : myString;
 	}
 
 	/**
@@ -32,6 +54,8 @@ public class StringCompression {
 	 * @param myString
 	 * @return the result of compressed string if the length of the compressed string is less than the 
 	 * original one, or return the original one if they have the same length.
+	 * 
+	 * It's a better solution to use StringBuilder
 	 */
 	private static String Compression(String myString) {
 		
