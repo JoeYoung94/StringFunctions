@@ -7,4 +7,5 @@ it contains
   3. palindromic check
   4. one edit check
   5. String Compression
+  6. N*N matrix Rotation
   
