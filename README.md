@@ -8,4 +8,4 @@ it contains
   4. one edit check
   5. String Compression
   6. N*N matrix Rotation
-  
+  7. get all permutations of a string recursively
