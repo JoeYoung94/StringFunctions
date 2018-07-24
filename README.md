@@ -1,11 +1,12 @@
 # StringFunctions
-my own java api for operating strings
+My own java api for operating strings
 
-it contains 
-  1. unique check
-  2. permutation check
-  3. palindromic check
-  4. one edit check
+It contains 
+  1. Unique check
+  2. Permutation check
+  3. Palindromic check
+  4. One edit check
   5. String Compression
   6. N*N matrix Rotation
-  7. get all permutations of a string recursively
+  7. Get all permutations of a string recursively
+  8. Zero Matrix
