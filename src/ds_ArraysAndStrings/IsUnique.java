@@ -60,7 +60,7 @@ public class IsUnique {
 		
 		for(HashMap.Entry<Character, Integer> entry : table.entrySet()) {
 			int value = entry.getValue();
-			if(value > 0) {
+			if(value > 1) {
 				return false;
 			}
 		}
@@ -82,7 +82,7 @@ public class IsUnique {
 		for(int i = 0; i < myString.length(); i++) {
 			char c = sb.charAt(i);
 			if(!table.containsKey(c)) {
-				table.put(c, 0);
+				table.put(c, 1);
 			}else {
 				int tmp = table.get(c);
 				table.put(c, ++tmp);
